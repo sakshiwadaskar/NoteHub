@@ -1,0 +1,31 @@
+meta {
+  name: postNewNote
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:9000/notes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Meeting Notes 41001",
+    "content": "Review budget allocation",
+    "actionItems": "User Stories plan",
+    "createdDate": "2024-03-27"
+  }
+}
+
+body:text {
+  {
+      "title": "Updated Meeting Notes 4555",
+      "content": "Updated review of budget allocation",
+      "actionItems": [
+          "Revise budget planns",
+          "Submit revised report"
+      ]
+  }
+}

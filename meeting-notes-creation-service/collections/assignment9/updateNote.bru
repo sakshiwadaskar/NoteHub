@@ -1,0 +1,18 @@
+meta {
+  name: updateNote
+  type: http
+  seq: 3
+}
+
+patch {
+  url: http://localhost:4000/notes/66043ad964bbee6075834ab7
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      
+    "content": "Brainstorm new product ideassssss"
+  }
+}
